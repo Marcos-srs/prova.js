@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+
+    background-color: #000;
+}
+
+.navbar h1{
+    color: white;
+    font-size: 32px;
+    text-shadow: 2px 2px 8px black;
+}
+
+.navbar span{
+    color: red;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color: red;
+}
+
+/* HERO */
+
+.hero{
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('sushi1.webp');
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+}
+
+.hero h2{
+    font-size: 50px;
+    text-shadow: 2px 2px 10px black;
+}
+
+.hero p{
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.btn{
+    background-color: red;
+    color: white;
+
+    padding: 12px 25px;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+/* CARDS */
+
+.destaques,
+.menu{
+    padding: 50px;
+}
+
+.destaques h2,
+.menu h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 300px;
+
+    background-color: #1d1d1d;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px red;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3,
+.card p,
+.card strong,
+.card span{
+    margin: 15px;
+}
+
+.card .btn{
+    display: block;
+    margin: 15px;
+    text-align: center;
+}
+
+/* DETALHES */
+
+.detalhes{
+    padding: 50px;
+}
+
+.detalhes section{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.detalhes img{
+    width: 400px;
+    border-radius: 10px;
+
+    transition: 0.5s;
+}
+
+.detalhes img:hover{
+    transform: scale(1.1);
+}
+
+.pedido{
+    margin-top: 20px;
+
+    padding: 15px 30px;
+
+    border: none;
+
+    background-color: red;
+
+    color: white;
+
+    font-size: 18px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    animation: piscar 1s infinite;
+
+}
+
+@keyframes piscar{
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
